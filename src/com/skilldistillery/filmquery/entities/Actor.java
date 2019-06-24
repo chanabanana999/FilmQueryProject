@@ -7,7 +7,6 @@ public class Actor {
 	private int id;
 	private String firstName;
 	private String lastName;
-//	private List<Film> films;
 
 //	constructors
 	public Actor() {
@@ -110,7 +109,7 @@ public class Actor {
 	}
 
 	public void setFilms(List<Film> findFilmsByActorId) {
-		
+
 	}
 
 }
