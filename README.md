@@ -10,6 +10,8 @@ Java, mysql, JDBC, Maven.
 #### Lessons Learned
 I learned that passing SQL queries via Java can be more complicated than directly entering queries via command line, and it was easy to throw errors. Layering the requirements from the instructions could sometimes cause unwanted effects in other methods that were previously working. 
 
+I would have liked to be able to call the database fields by column name (instead of index column number), but I had trouble getting that working and spent my time focusing on functionality instead. I'm now seeing how my classmates did this so I can call the fields by name next time.
+
 I would have liked to continue to some of the stretch goals, such as JUnit tests, but it took me a very long time to get all the user stories working. For example, adding a search by keyword in both the title and the description proved difficult, as did figuring out how to join multiple tables.
 
 However, overall, I appreciate the power of being able to perform queries and work with data via Java an JDBC, as retrieving data from a database seems critical to most applications.
