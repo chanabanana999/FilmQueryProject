@@ -17,6 +17,7 @@ public class Film {
 	private String rating;
 	private String specialFeatures;
 	private List<Actor> actors;
+	private String language;
 
 //	constructors
 	public Film() {
@@ -32,7 +33,7 @@ public class Film {
 
 	public Film(int id, String title, String description, int releaseYear, int languageId, int rentalDuration,
 			double rentalRate, double length, double replacementCost, String rating, String specialFeatures,
-			List<Actor> actors) {
+			List<Actor> actors, String language) {
 		this.id = id;
 		this.title = title;
 		this.description = description;
@@ -45,6 +46,7 @@ public class Film {
 		this.rating = rating;
 		this.specialFeatures = specialFeatures;
 		this.actors = actors;
+		this.language = language;
 	}
 
 	public Film(int id, String title, String description, int releaseYear, int languageId, int rentalDuration,
@@ -151,7 +153,15 @@ public class Film {
 		this.specialFeatures = specialFeatures;
 	}
 
-//	Stringbuilder
+public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	//	Stringbuilder
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
