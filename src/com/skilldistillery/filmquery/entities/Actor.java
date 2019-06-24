@@ -4,10 +4,10 @@ import java.util.List;
 
 public class Actor {
 //	 variables
-	private int Id;
+	private int id;
 	private String firstName;
 	private String lastName;
-	private List<Film> films;
+//	private List<Film> films;
 
 //	constructors
 	public Actor() {
@@ -16,18 +16,18 @@ public class Actor {
 
 	public Actor(int id, String firstName, String lastName) {
 		super();
-		Id = id;
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
 
 //getters and setters
 	public int getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getFirstName() {
@@ -51,7 +51,7 @@ public class Actor {
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("Actor [Id=");
-		builder.append(Id);
+		builder.append(id);
 		builder.append(", firstName=");
 		builder.append(firstName);
 		builder.append(", lastName=");
@@ -71,7 +71,7 @@ public class Actor {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + Id;
+		result = prime * result + id;
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		return result;
@@ -89,7 +89,7 @@ public class Actor {
 			return false;
 		}
 		Actor other = (Actor) obj;
-		if (Id != other.Id) {
+		if (id != other.id) {
 			return false;
 		}
 		if (firstName == null) {
@@ -110,7 +110,6 @@ public class Actor {
 	}
 
 	public void setFilms(List<Film> findFilmsByActorId) {
-		// TODO Auto-generated method stub
 		
 	}
 
